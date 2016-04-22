@@ -1,37 +1,3 @@
-var finish =
-  [
-  [
-    {
-      typ: "ne",
-      orientation: 1
-    },
-    {
-      typ: "nes",
-      orientation: 1
-    },
-    {
-      typ: "ne",
-      orientation: 2
-    },
-  ],
-  [
-    {
-      typ: "ne",
-      orientation: 0
-    },
-    {
-      typ: "nes",
-      orientation: 3
-    },
-    {
-      typ: "ne",
-      orientation: 3
-    }
-  ]
-];
-
-
-
 var randomizeFinish = function(finish){
   var game = finish;
   return game;
@@ -39,8 +5,19 @@ var randomizeFinish = function(finish){
 
 var game = randomizeFinish(finish);
 
+
+var spin = function(x){
+	var i = x.find('.rowid').val();
+    var j = x.find('.columnid').val();
+    var elem = game[i][j];
+    elem.orientation += 1;
+    if(elem.orientation > 3)
+      elem.orientation = 0;
+}
+
 var render = function(game){
   var html = '';
+  
   for(var i = 0; i < game.length; i++){
     html += '<div class="row">';
     for(var j = 0; j < game[i].length; j++){
@@ -51,16 +28,12 @@ var render = function(game){
     }
       html += '</div>';
   }
+  
   $('#game').html(html);
+  
   $('#game .cell').on('click', function(e){
-    var i = $(this).find('.rowid').val();
-    var j = $(this).find('.columnid').val();
-    var elem = game[i][j];
-    elem.orientation += 1;
-    if(elem.orientation > 3)
-      elem.orientation = 0;
-
-    render(game);
+	  spin($(this));
+	  render(game);
   });
 };
 
