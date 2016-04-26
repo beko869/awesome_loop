@@ -71,8 +71,13 @@ h1{
 	font-size:0.5em;
 	margin:20px;
 }
-
-
+#hint{
+	font-family: 'Press Start 2P', sans-serif;
+  color:#4b4b7b;
+  padding:1em;
+  text-align:center;
+  font-size: 1em;
+}
 
 #game:not(.won) .cell.hide{
 	background-color: #dadada !important;

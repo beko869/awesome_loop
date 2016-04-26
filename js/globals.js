@@ -1,4 +1,4 @@
-var hints = ['all you need is love','this will take forever','no one is alone'];
+var hints = ['all you need is love','this will take forever','no one is alone','be haphephobic'];
 
 var finish =
 	[
@@ -136,5 +136,79 @@ var finish =
 			  orientation: 0
 			}
 		  ]
+		],
+		
+		[
+			[
+				{
+					typ:"ns",
+					orientation:1
+				},
+				{
+					typ:"ns",
+					orientation:0
+				},
+				{
+					typ:"ns",
+					orientation:1
+				}
+			],
+			[
+				{
+					typ:"ne",
+					orientation:3
+				},
+				{
+					typ:"ns",
+					orientation:1
+				},
+				{
+					typ:"ne",
+					orientation:0
+				}
+			],
+			[
+				{
+					typ:"ns",
+					orientation:0
+				},
+				{
+					typ:"nesw",
+					orientation:0
+				},
+				{
+					typ:"ns",
+					orientation:0
+				}
+			],
+			[
+				{
+					typ:"ne",
+					orientation:2
+				},
+				{
+					typ:"ns",
+					orientation:1
+				},
+				{
+					typ:"ne",
+					orientation:1
+				}
+			],
+			[
+				{
+					typ:"ns",
+					orientation:1
+				},
+				{
+					typ:"ns",
+					orientation:0
+				},
+				{
+					typ:"ns",
+					orientation:1
+				}
+			]
+			
 		]
 	];
