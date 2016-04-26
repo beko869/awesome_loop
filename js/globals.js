@@ -1,9 +1,9 @@
-var hints = ['all you need is love','this will take forever','no one is alone','be haphephobic','computers calculating 8 + 2'];
+var hints = ['all you need is love','this will take forever','no one is alone','be haphephobic','computers calculating 8 + 2','best game ever'];
 
 var finish =
 	[
 		
-		[
+		[//heart level begin
 		   [
 			 {
 			   typ: "ne",
@@ -32,8 +32,8 @@ var finish =
 			   orientation: 3
 			 }
 		   ]
-		 ],
-		[
+		],//heart level end
+		[ //infinity level begin
 		   [
 			 {
 			   typ: "ne",
@@ -62,8 +62,8 @@ var finish =
 			   orientation: 3
 			 }
 		   ]
-		 ],
-		[
+		], //infinity level end
+		[	//connect everything level begin
 		  [
 			{
 			  typ: "ne",
@@ -136,9 +136,9 @@ var finish =
 			  orientation: 0
 			}
 		  ]
-		],
+		], //connect everything level end
 		
-		[
+		[ //do not touch level begin
 			[
 				{
 					typ:"ns",
@@ -209,8 +209,8 @@ var finish =
 					orientation:1
 				}
 			]
-		],
-		//last level begin
+		], //do not touch level end
+		//10 level begin
 		[
 			[
 			 {
@@ -265,6 +265,219 @@ var finish =
 			 }
 		   ]
 		
-		]
-		//last level end		
+		], //10 level end	
+		[
+			[
+				{
+					typ:"ne",
+					orientation:1
+				},
+				{
+					typ:"ne",
+					orientation:2
+				},
+				{
+					typ:"n",
+					orientation:2
+				},
+				{
+					typ:"ne",
+					orientation:2
+				},
+				{
+					typ:"n",
+					orientation:2
+				},
+				{
+					typ:"ne",
+					orientation:1
+				},
+				{
+					typ:"ne",
+					orientation:2
+				},
+				{
+					typ:"n",
+					orientation:2
+				},
+				
+			],
+			[
+				{
+					typ:"ne",
+					orientation:0
+				},
+				{
+					typ:"ne",
+					orientation:2
+				},
+				{
+					typ:"ns",
+					orientation:0
+				},
+				{
+					typ:"ne",
+					orientation:3
+				},
+				{
+					typ:"ns",
+					orientation:0
+				},
+				{
+					typ:"ns",
+					orientation:0
+				},
+				{
+					typ:"ns",
+					orientation:0
+				},
+				{
+					typ:"ns",
+					orientation:0
+				},
+				
+			],
+			[
+				{
+					typ:"ne",
+					orientation:0
+				},
+				{
+					typ:"ne",
+					orientation:3
+				},
+				{
+					typ:"n",
+					orientation:0
+				},
+				{
+					typ:"n",
+					orientation:2
+				},
+				{
+					typ:"n",
+					orientation:0
+				},
+				{
+					typ:"n",
+					orientation:0
+				},
+				{
+					typ:"ne",
+					orientation:0
+				},
+				{
+					typ:"ne",
+					orientation:3
+				},
+				
+			],
+			[
+				{
+					typ:"ne",
+					orientation:1
+				},
+				{
+					typ:"ns",
+					orientation:1
+				},
+				{
+					typ:"ne",
+					orientation:2
+				},
+				{
+					typ:"ns",
+					orientation:0
+				},
+				{
+					typ:"n",
+					orientation:2
+				},
+				{
+					typ:"n",
+					orientation:2
+				},
+				{
+					typ:"ns",
+					orientation:1
+				},
+				{
+					typ:"ne",
+					orientation:2
+				},
+				
+			],
+			[
+				{
+					typ:"ns",
+					orientation:0
+				},
+				{
+					typ:"ne",
+					orientation:2
+				},
+				{
+					typ:"ns",
+					orientation:0
+				},
+				{
+					typ:"ns",
+					orientation:0
+				},
+				{
+					typ:"ns",
+					orientation:0
+				},
+				{
+					typ:"ns",
+					orientation:0
+				},
+				{
+					typ:"ne",
+					orientation:1
+				},
+				{
+					typ:"ne",
+					orientation:3
+				},
+				
+			],
+			[
+				{
+					typ:"ne",
+					orientation:0
+				},
+				{
+					typ:"n",
+					orientation:0
+				},
+				{
+					typ:"ne",
+					orientation:3
+				},
+				{
+					typ:"ne",
+					orientation:0
+				},
+				{
+					typ:"ne",
+					orientation:3
+				},
+				{
+					typ:"n",
+					orientation:0
+				},
+				{
+					typ:"ne",
+					orientation:0
+				},
+				{
+					typ:"ns",
+					orientation:1
+				},
+				
+			],
+		
+		] //SpinQuiz level end
+			
 	];
