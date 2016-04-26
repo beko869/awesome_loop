@@ -18,6 +18,11 @@ var randomizeFinish = function( finish ){
 		tmpGame[i][j] = newObject;
     }
   }
+  
+  if( checkFinish ){
+	randomizeFinish();
+  }
+  
   return tmpGame;
 };
 
@@ -127,14 +132,7 @@ var render = function(){
 						} else {
 							//Spiel beendet
 							stats.end = true;
-							$('#hint').html('');
-							
-							
-								
-							
-							
-							
-								
+							$('#hint').html('');		
 						}
 						render();
 						$('#game').removeClass('won');
