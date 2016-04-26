@@ -49,6 +49,9 @@ h1{
 #game .row .cell.o00 {
   transform: rotate(360deg);
 }
+#game.won{
+	border: solid 3px green;
+}
 #spinsContainer{
 	text-align:left;
 	float:left;
@@ -69,8 +72,10 @@ h1{
 	margin:20px;
 }
 
-.cell.hide{
-	background-color: #2b2b2b !important;
+
+
+#game:not(.won) .cell.hide{
+	background-color: #dadada !important;
 }
 
 .show img{

@@ -77,10 +77,13 @@ var render = function(){
 		
 		$('#startGame').unbind('click').on('click', function(e){
 			stats.level = 0;
+			stats.score = 0;
 		
 			game = randomizeFinish(finish[stats.level]);
 			stats.level++;
 			
+			$('#hint').html(hints[stats.level-1]);
+			$('#spinCounter').html(stats.score);
 			$('#levelCounter').html(stats.level);
 			stats.end = false;
 			render();
@@ -112,20 +115,36 @@ var render = function(){
 			  $('#game .cell').unbind('click');
 			  spin($(this));
 			  setTimeout(function(){
-				  render(game);
+				  render();
 					if( checkFinish(finish[stats.level-1],game) ){
+					setTimeout(function(){
 						if( finish.length > stats.level ){
 							 game = randomizeFinish(finish[stats.level]);
 							 stats.level++;
 							 $('#levelCounter').html(stats.level);
+							 $('#hint').html(hints[stats.level-1]);
+							 render();
 						} else {
 							//Spiel beendet
 							stats.end = true;
+							$('#hint').html('');
 							
 							
+								
+							
+							
+							
+								
 						}
-						
 						render();
+						$('#game').removeClass('won');
+						
+					}, 3000);
+					$('#game').addClass('won');
+					$('.cell').removeClass('hide').addClass('show');
+					$('.cell').unbind('click');
+					
+
 					}
 			  }, 100);
 			  //render(game);
