@@ -14,11 +14,14 @@ h1{
   display: flex;
   justify-content:center;
   align-items: center;
+  flex-direction: column;
 }
 #game{
   padding: 5px;
   display: flex;
   flex-direction: column;
+  justify-content:center;
+  align-items:center;
 }
 #game .row {
   display: flex;
@@ -45,4 +48,63 @@ h1{
 }
 #game .row .cell.o00 {
   transform: rotate(360deg);
+}
+#spinsContainer{
+	text-align:left;
+	float:left;
+}
+#levelsContainer{
+	text-align:right;
+	float:right;
+}
+#score{
+	width:100%;
+	max-width:500px;
+	font-family: 'Press Start 2P', sans-serif;
+	font-size:0.5em;
+}
+#win{
+	font-family: 'Press Start 2P', sans-serif;
+	font-size:0.5em;
+	margin:20px;
+}
+
+.cell.hide{
+	background-color: #2b2b2b !important;
+}
+
+.show img{
+	visibility:visible;
+}
+.hide img{
+	visibility:hidden;
+}
+
+.btn {
+	max-width:200px;
+	cursor:pointer;
+  background: #4b4b7b;
+  background-image: -webkit-linear-gradient(top, #4b4b7b, #7171a3);
+  background-image: -moz-linear-gradient(top, #4b4b7b, #7171a3);
+  background-image: -ms-linear-gradient(top, #4b4b7b, #7171a3);
+  background-image: -o-linear-gradient(top, #4b4b7b, #7171a3);
+  background-image: linear-gradient(to bottom, #4b4b7b, #7171a3);
+  -webkit-border-radius: 6;
+  -moz-border-radius: 6;
+  border-radius: 6px;
+  font-family: 'Press Start 2P', sans-serif;
+  font-size:0.5em;
+  color: #ffffff;
+  padding: 10px 20px 10px 20px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: -o-linear-gradient(top, #3cb0fd, #3498db);
+  background-image: linear-gradient(to bottom, #3cb0fd, #3498db);
+  text-decoration: none;
 }
