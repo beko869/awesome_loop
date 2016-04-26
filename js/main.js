@@ -19,8 +19,8 @@ var randomizeFinish = function( finish ){
     }
   }
   
-  if( checkFinish ){
-	randomizeFinish();
+  if( checkFinish( finish,tmpGame ) ){
+	return randomizeFinish( finish );
   }
   
   return tmpGame;
